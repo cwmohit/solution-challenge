@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Hello, world!</title>
+
+</head>
+
+<body>
+    <div class="container mt-3">
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <a class="navbar-brand" href="/">
+                <span class="mr-2"><img src="images/dsc.png" width="64px" height="32px"></span>
+                FOOD BAZAAR</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html#about">About <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="register.html">Register</a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </nav>
+        <hr>
+    </div>
+
+
+    <div class="container ">
+      
+       
+         <div class="row" >
+             <div class="col-lg-6 col-md-6 col-10 m-auto">
+                <figure class="m-auto">
+                    <img src="images/login1.svg" style="height: 300px;" class="w-100" alt="image">
+                  </figure>
+             </div>
+             <div class="col-lg-6 col-md-6 col-10 m-auto">
+                <h2 class="text-center mb-2 ">Register</h2>
+                <div class="r" style="    display: flex;
+                justify-content: center;
+                margin: 22px;">
+        
+                    <button id="Individual" class="btn btn-outline-info mx-2">Individual</button> 
+                    <button id="Oragnization" class="btn btn-outline-info mx-2">Oragnization</button>
+                </div>
+                <div id="OragnizationForm">
+                    <div class="card">
+                         <div class="card-body">
+                            <form style="font-size: 12px;">
+                                <div class="form-group">
+                                  <label for="exampleInputEmail1">Oragnization Name</label>
+                                  <input type="text" class="form-control" id="name" aria-describedby="name" placeholder="Full Name">
+                                
+                                </div>
+                                <div class="form-group">
+                                  <label for="exampleInputEmail1">Email address</label>
+                                  <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+                                </div>
+                                <div class="form-group">
+                                  <label for="exampleInputPassword1">Mobile</label>
+                                  <input type="number" class="form-control" id="phone" placeholder="Mobile Number">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">Password</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                  </div>
+                                <button type="submit" class="btn btn-outline-primary">Register</button>
+                              </form>
+                              Already an account <a href="#">click here</a>
+                         </div>
+
+                    </div>
+                
+                </div>
+                <div class="card" id="IndividualForm">
+                 
+                    <div class="card-body" >
+                        <form style="font-size: 12px;">
+                            <div class="form-group">
+                              <label for="exampleInputEmail1">Your Name</label>
+                              <input type="text" class="form-control" id="name" aria-describedby="name" placeholder="Full Name">
+                            
+                            </div>
+                            <div class="form-group">
+                              <label for="exampleInputEmail1">Email address</label>
+                              <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+                            </div>
+                            <div class="form-group">
+                              <label for="exampleInputPassword1">Mobile</label>
+                              <input type="number" class="form-control" id="phone" placeholder="Mobile Number">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                              </div>
+                            <button type="submit" class="btn btn-outline-primary">Register</button>
+                          </form>
+                          Already an account <a href="#loginRow">click here</a>
+                    </div>
+                  </div>
+                 
+             </div>
+
+         </div>
+
+    </div>
+
+
+    <div class="container my-5">
+        <div class="row" id="loginRow">
+            <div class="col-lg-6 col-md-6 col-10 m-auto  order-md-0 order-1">
+              <h2 class="text-center mb-5">Login</h2>
+   <div class="card">
+       <div class="card-body">
+        <form>
+            <div class="form-group">
+              <label for="email">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" class="form-control" id="password" placeholder="Password">
+            </div>
+            
+            <button type="submit" class="btn btn-outline-primary">Login</button>
+            
+          </form>
+       </div>
+   </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-10 m-auto order-0 order-md-0">
+            <figure class="m-auto">
+                <img src="images/login2.svg" style="height: 300px;" class="w-100" alt="image">
+              </figure>
+          </div>
+        </div>
+
+    </div>
+
+
+
+    <div class="conatiner my-5" style="overflow: hidden;">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-10 m-auto">
+                <div className="centerdiv" style="display: flex;
+                justify-content: space-evenly;">
+                    <a href="/">
+                    
+                      <i class="fa fa-facebook icon facebook" aria-hidden="true"></i>
+                    </a>
+                    <a href="/">
+                      
+                      <i class="fa fa-instagram icon instagram" aria-hidden="true"></i>
+                    </a>
+                    <a href="/">
+                     
+                      <i class="fa fa-linkedin icon linkedin" aria-hidden="true"></i>
+                    </a>
+                    <a href="/">
+                      
+                      <i class="fa fa-youtube-play icon youtube" aria-hidden="true"></i>
+                    </a>
+                  
+                  </div>
+            </div>
+    
+        </div>
+    <h4 class="text-center mt-3 text-info">Developed By Developers Student Club MBM &#10084;</h4>
+       
+    </div>
+    <script src="js/index.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script>
+        $('.carousel').carousel({
+            interval: 2000
+        });
+    </script>
+</body>
+
+</html>
