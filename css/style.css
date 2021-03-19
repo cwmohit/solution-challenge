@@ -1,52 +1,134 @@
 *{
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 p{
-    color: #888ca8;
+  color: #888ca8;
 }
 .RewardsCards,.card{
-    box-shadow:
-    inset 0 -3em 3em rgba(0,0,0,0.1),
-          0 0  0 2px rgb(255,255,255),
-          0.3em 0.3em 1em rgba(0,0,0,0.3);
+  box-shadow:
+  inset 0 -3em 3em rgba(0,0,0,0.1),
+        0 0  0 2px rgb(255,255,255),
+        0.3em 0.3em 1em rgba(0,0,0,0.3);
 
-          transition: transform .2s; 
+        transition: transform .2s;
 }
 .RewardsCards:hover {
-    transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-  }
-  .icon {
-    font-size: 40px;
-  }
+  transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+.icon {
+  font-size: 40px;
+}
 .facebook {
-    color: #3b5998;
-  }
-  .instagram {
-    color: #e84393;
-  }
-  .youtube {
-    color: #e84118;
-  }
-  .twitter {
-    color: #0097e6;
-  }
+  color: #3b5998;
+}
+.instagram {
+  color: #e84393;
+}
+.youtube {
+  color: #e84118;
+}
+.twitter {
+  color: #0097e6;
+}
 .activeButton{
-  background: #CE8823;
-    color: white;
-    border: 1px solid #CE8823;
+background: #CE8823;
+  color: white;
+  border: 1px solid #CE8823;
 }
 .btn:hover{
-  background: #CE8823;
-  color: white;
+background: #CE8823;
+color: white;
 }
 .btn-outline-info{
-  border: 1px solid #CE8823;
-  color: black;
-  border: 1px solid #CE8823;
+border: 1px solid #CE8823;
+color: black;
+border: 1px solid #CE8823;
 }
 .btn-outline-info:hover
 {
-  border: 1px solid #CE8823;
+border: 1px solid #CE8823;
 
 }
+.sidenav{
+height: 500px;
+background-color:#32383e;
+color: white;
+padding: 10px;
+}
+.vertical-menu a {
+
+color: black;
+display: block;
+padding: 12px;
+text-decoration: none;
+text-align: center;
+}
+
+@media only screen and (min-width: 700px) {
+.carousel1{
+ opacity: 0.8;
+}
+}
+.Dashboardbuttons{
+margin-top: 70px;
+}
+@media only screen and (max-width: 600px) {
+.sidenav{
+  height: 180px;
+  background-color:white;
+  color: black;
+}
+.donateButton{
+  margin: auto;
+  justify-content: center;
+    width: fit-content;
+    margin-top: 31px;
+}
+.brandSize{
+  font-size: small;
+}
+.navbar-nav{
+  padding: 10px;
+}
+.Dashboardbuttons{
+  margin-top: 134px;
+}
+}
+
+.modal-dialog {
+min-height: calc(100vh - 60px);
+display: flex;
+flex-direction: column;
+justify-content: center;
+overflow: auto;
+@media(max-width: 768px) {
+  min-height: calc(100vh - 20px);
+}
+}
+
+.donate{
+background: #CE8823!important;
+color: white!important;
+border: #CE8823;
+}
+
+.acceptIcon:hover{
+background: green;
+color: white;
+
+border-radius: 2px;
+
+}
+
+.rejectIcon:hover{
+background: red;
+color: white;
+
+border-radius: 2px;
+}
+html{
+scroll-behavior: smooth;
+
+}
+

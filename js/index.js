@@ -16,3 +16,26 @@ organizationButton.addEventListener("click",()=>{
     individualButton.classList.remove("activeButton");
     console.log("Button clicked organization");
 })
+
+
+
+$('#myModal').on('shown.bs.modal', function () {
+  $('#myInput').trigger('focus')
+})
+
+
+const accept = document.getElementById("accept");
+const reject = document.getElementById("reject");
+
+accept.addEventListener("click",()=>{
+  console.log("Clicked");
+  accept.classList.add("acceptIcon");
+})
+reject.addEventListener("click",()=>{
+  accept.classList.add("rejectIcon");
+})
+
+
+$('#myModal').on('shown.bs.modal', function () {
+  $('#myInput').trigger('focus')
+})
