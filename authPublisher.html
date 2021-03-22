@@ -10,7 +10,6 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.6.2/animate.min.css" rel="stylesheet">
   <title>Food Wastage</title>
 
- 
 </head>
 <body>
 
@@ -44,65 +43,69 @@
           </div>
       </div>
       </nav>
+  
 
 
-<div class="container" style="margin-top: 70px;">
-        <h4>GET INSTANTLY REWARDZ BY DONATING VALUABLE FOOD</h4>
-        <p>We Are The Team Of <span class="font-weight-bold text-info">DSC MBM </span></p>
-
-                <div class="row justify-content-center align-items-center" >
-                    <div class="col-md-6 col-12 order-md-0 order-1 d-flex justify-content-center flex-column">
-                        <div>
-
-                            <form style="display: flex;
-                            flex-direction: column;
-                            width: 100%;">
-                              <input type="hidden" name="_csrf" value=<%=csrfToken%>>
-                                <div class="form-group w-100">
-                                  <label for="name">Your Name</label>
-                                  <input type="text" class="form-control" id="name" aria-describedby="name" placeholder="Full Name" value=<%=user.displayName%>>
-
-                                </div>
-                                <div class="form-group">
-                                  <label for="email">Mobile</label>
-                                  <input type="email" class="form-control" id="email" placeholder="email" value=<%=user.email%>>
-                                </div>
-                                <div class="form-group">
-                                  <label for="phone">Mobile</label>
-                                  <input type="number" class="form-control" id="phone" placeholder="9876543210" value=<%=user.phoneNumber%>>
-                                </div>
-                                <div class="form-group">
-                                  <label for="address">Address</label>
-                                  <input type="text" class="form-control" id="address" placeholder="Your Full Address">
-                                </div>
-                                <div class="form-group">
-                                    <label for="Quantity">Quantity</label>
-                                    <textarea class="form-control" id="Quantity" rows="3" placeholder="How Much Quantity?"></textarea>
-                                  </div>
-
-                                <button type="submit" class="btn btn-info">Send Request</button>
-                              </form>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6 col-12 order-md-0 order-0">
-                        <!-- <figure>
-                            <img src={SelectRoom} class="w-100" alt="image" />
-                        </figure> -->
-                        <figure>
-                          <img src="/images/form.svg" class="w-100" alt="image">
-                        </figure>
+<div class="container " style="margin-top: 70px;">
 
 
-                    </div>
+  <div class="row" >
+    <div class="col-lg-6 col-md-6 col-10 m-auto" id="register">
+      <h2 class="text-center mb-2 ">Donor</h2>
+      <div class="r" style="    display: flex;
+      justify-content: center;
+      margin: 22px;">
 
-                </div>
+      <button id="SignUp" class="btn btn-outline-info mx-2">SignUp</button>
+      <button id="Login" class="btn btn-outline-info mx-2">Login</button>
+    </div>
+    <div class="card" id="LoginForm">
+      <div class="card-body">
+        <form id="loginForm">
+          <div class="form-group">
+            <label for="loginEmail">Email address</label>
+            <input name="email" type="email" class="form-control" id="loginEmail" aria-describedby="emailHelp" placeholder="Enter email">
+          </div>
+          <div class="form-group">
+            <label for="loginPassword">Password</label>
+            <input name="password" type="password" class="form-control" id="loginPassword" placeholder="Password">
+          </div>
+          <button type="submit" class="btn btn-outline-primary" name="login" value="publisher">Login</button>
 
+        </form>
+        Forgot Password? <a href="forgotPassword.html">click here</a>
+      </div>
+    </div>
+    <div class="card" id="SignUpForm">
+      <div class="card-body" >
+        <form style="font-size: 12px;" action="/register/publisher" method="POST">
+          <input type="hidden" name="_csrf" value=<%=csrfToken%>>
+          <div class="form-group">
+            <label for="Name">Your Name</label>
+            <input type="text" class="form-control" id="Name" aria-describedby="name" placeholder="Full Name" name = "displayName">
+
+          </div>
+          <div class="form-group">
+            <label for="Email">Email address</label>
+            <input type="email" class="form-control" id="Email" aria-describedby="emailHelp" placeholder="Enter email" name="email">
+          </div>
+          <div class="form-group">
+            <label for="Phone">Mobile</label>
+            <input type="number" class="form-control" id="Phone" placeholder="9876543210" name="phoneNumber">
+          </div>
+          <div class="form-group">
+            <label for="Password">Password</label>
+            <input type="password" class="form-control" id="Password" placeholder="Password" name="password">
+          </div>
+          <button type="submit" class="btn btn-outline-primary">Register</button>
+        </form>
+      </div>
     </div>
 
+  </div>
 
-
-
+</div>
+</div>
 
 
   <!-- add footer here -->
@@ -155,5 +158,4 @@
 
   </body>
 </html>
-
 
