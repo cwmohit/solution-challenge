@@ -1,84 +1,91 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="/css/style.css">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.6.2/animate.min.css" rel="stylesheet">
-  <title>Food Wastage</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/style.css">
+    <title>Food Bazaar</title>
 
+  </head>
+  <body>
+      <div class="container mt-3">
 
-</head>
-<body>
-
-  <!-- Add navbar here -->
-
-    <nav class="navbar  navbar-expand-lg navbar-light bg-white fixed-top">
-      <div class="container mx-auto my-2">
-
-        <a class="navbar-brand " href="/" style="font-size: large; color: #EDBB00;">
-          <span class="mr-2 "><img src="images/dsc.png" width="64px" height="32px"></span>
-         <b>FOOD BAZAAR</b></a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-  
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto" >
-              <li class="nav-item ">
-                <a class="nav-link" href="donate.html">Donate <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item ">
-                <a class="nav-link" href="index.html#about">About <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="publisherDashboard.html">Donor</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="subscriberDashboard.html">Donee</a>
-              </li>
-            </ul>
-          </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <a class="navbar-brand" href="index.html">
+                <span class="mr-2"><img src="images/dsc.png" width="64px" height="32px"></span>
+                FOOD BAZAAR</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto" >
+                <li class="nav-item ">
+                  <a class="nav-link" href="donate.html">Donate <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link" href="/#about">About <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/#register">Register</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/#login">Login</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Username
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Logout</a>
+                
+                  </div>
+                </li>
+              </ul>
+              
+            </div>
+          </nav>
+          <hr>
       </div>
-      </nav>
 
-    <div class="container" style="margin-top: 70px;">
+    <div class="container">
       <div class="row content">
         <div class="col-sm-3 sidenav">
           <div class="vertical-menu">
             <h2 class="text-center">Your Profile</h2>
             <hr>
-            <a><h4>ABCD Foundation</h4></a>
-            <a>abcd@gmai.com</a>
-            <a>9785757583</a>
-            <a class="btn btn-warning" href="/logout/subscriber">LogOut</a>
+            <a><h4>ABCD Foundation</h4></a>  
+            <a>accd@gmail.com</a>
+            <a>9784610573</a>  
             <h3 class="text-center mt-4">Your Credits: 500</h3>
           </div>
 
         </div>
-
-        <div class="col-sm-9 ">
-
-
+    
+        <div class="col-sm-9 "> 
+         
+         
             <div class="Dashboardbuttons" style="display: flex;
     justify-content: center;">
               <button id="OverView" class="btn btn-outline-info mx-2">OverView</button>
             <button id="Statatics" class="btn btn-outline-info mx-2">Statistics</button>
           </div>
-
-
-
+          
+          
+      
           <div class="table-responsive" id="OverviewTable">
 
             <table class="table caption-top">
               <br>
-
-
-
-
+            
+              
+            
+              
               <br><br>
               <thead class="table-dark">
                 <tr>
@@ -100,7 +107,7 @@
                   <td>5646543148</td>
                   <td><a class="btn1"><i  class="fa mx-1 fa-check acceptIcon" aria-hidden="true"></i></a>
                     <a class="btn2"><i  class="fa mx-1 fa-times rejectIcon" aria-hidden="true"></i></a>
-
+                    
                   </td>
                   <td>
                     <div >
@@ -111,10 +118,10 @@
 
                   </td>
                 </tr>
-
+               
               </tbody>
             </table>
-
+           
           </div>
 
 
@@ -137,22 +144,22 @@
                 <img src="images/credits.svg" class="w-100" alt="image">
               </figure>
             </div>
-
-
+  
+  
             <div class="col-md-6 col-12 order-md-0 order-1 d-flex justify-content-center align-items-start flex-column">
               <h3> Lorem Ipsum passages </h3>
-
+              
               <P>Welcome To <span class="font-weight-bold">Food Bazaar</span> Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</P>
               <a href="payment.html" style="text-decoration: none;"><button class="btn btn-outline-info">Buy Credits</button></a>
             </div>
-
-
-
+  
+  
+  
           </div>
         </div>
-
+  
       </div>
-
+  
     </div>
 
     <!-- Send Credits -->
@@ -166,11 +173,6 @@
             </button>
           </div>
           <div class="modal-body">
-            <div class="form-group">
-              <label for="peoples">Number of People Fed</label>
-              <input type="number" class="form-control" id="peoples" aria-describedby="peoples" placeholder="Number of Peoples Fed?">
-             
-            </div>
             <div class="form-group">
               <label for="exampleFormControlSelect1">select</label>
               <select class="form-control" id="exampleFormControlSelect1">
@@ -189,79 +191,72 @@
         </div>
       </div>
     </div>
-
-
     
 
-  <!-- add footer here -->
-  <div class="conatiner my-5" style="overflow: hidden;">
+   
+
+   <div class="conatiner my-5" style="overflow: hidden;">
     <div class="row">
-      <div class="col-lg-6 col-md-6 col-10 m-auto">
-        <div className="centerdiv" style="display: flex;
-        justify-content: space-evenly;">
-        <a href="/">
+        <div class="col-lg-6 col-md-6 col-10 m-auto">
+            <div className="centerdiv" style="display: flex;
+            justify-content: space-evenly;">
+                <a href="/">
+                
+                  <i class="fa fa-facebook icon facebook" aria-hidden="true"></i>
+                </a>
+                <a href="/">
+                  
+                  <i class="fa fa-instagram icon instagram" aria-hidden="true"></i>
+                </a>
+                <a href="/">
+                 
+                  <i class="fa fa-linkedin icon linkedin" aria-hidden="true"></i>
+                </a>
+                <a href="/">
+                  
+                  <i class="fa fa-youtube-play icon youtube" aria-hidden="true"></i>
+                </a>
+              
+              </div>
+        </div>
 
-          <i class="fa fa-facebook icon facebook" aria-hidden="true"></i>
-        </a>
-        <a href="/">
-
-          <i class="fa fa-instagram icon instagram" aria-hidden="true"></i>
-        </a>
-        <a href="/">
-
-          <i class="fa fa-linkedin icon linkedin" aria-hidden="true"></i>
-        </a>
-        <a href="/">
-
-          <i class="fa fa-youtube-play icon youtube" aria-hidden="true"></i>
-        </a>
-
-      </div>
     </div>
-
-  </div>
-  <h4 class="text-center mt-3 text-info">Developed By Developers Student Club MBM &#10084;</h4>
-
+<h4 class="text-center mt-3 text-info">Developed By Developers Student Club MBM &#10084;</h4>
+   
 </div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-auth.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
-<script src="/js/index.js"></script>
-<script>
-  $('.carousel').carousel({
-    interval: 4000
-  });
-</script>
-<script src="/js/index.js"></script>
 
 <script>
-const overviewButton = document.getElementById("OverView");
-const stataticsButton = document.getElementById("Statatics");
-document.getElementById("OverView").classList.add("activeButton");
-document.getElementById("statistics").style.display="none";
-document.getElementById("OverView").addEventListener("click",()=>{
+    const overviewButton = document.getElementById("OverView");
+    const stataticsButton = document.getElementById("Statatics");
+    document.getElementById("OverView").classList.add("activeButton");
     document.getElementById("statistics").style.display="none";
-    document.getElementById("OverviewTable").style.display="block";
-    overviewButton.classList.add("activeButton");
-    stataticsButton.classList.remove("activeButton");
-    console.log("Button clicked overview");
-})
-stataticsButton.addEventListener("click",()=>{
-    document.getElementById("OverviewTable").style.display="none";
-    document.getElementById("statistics").style.display="block";
-    stataticsButton.classList.add("activeButton");
-    overviewButton.classList.remove("activeButton");
-    console.log("Button clicked statstics");
+    document.getElementById("OverView").addEventListener("click",()=>{
+        document.getElementById("statistics").style.display="none";
+        document.getElementById("OverviewTable").style.display="block";
+        overviewButton.classList.add("activeButton");
+        stataticsButton.classList.remove("activeButton");
+        console.log("Button clicked overview");
+    })
+    stataticsButton.addEventListener("click",()=>{
+        document.getElementById("OverviewTable").style.display="none";
+        document.getElementById("statistics").style.display="block";
+        stataticsButton.classList.add("activeButton");
+        overviewButton.classList.remove("activeButton");
+        console.log("Button clicked statstics");
+    });
+        </script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script>
+        $('.carousel').carousel({
+  interval: 2000
 });
+
     </script>
+    <script src="js/index.js"></script>
   </body>
 </html>
-
-
-

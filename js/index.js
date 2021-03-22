@@ -1,19 +1,23 @@
-$("#Login").addClass("activeButton")
-$('#SignUpForm').css("display","none")
-
-$("#SignUp").click(()=>{
-  $('#SignUpForm').css("display","block")
-  $('#LoginForm').css("display","none")
-  $("#SignUp").addClass("activeButton")
-  $("#Login").removeClass("activeButton");
+const individualButton = document.getElementById("Individual");
+const organizationButton = document.getElementById("Oragnization");
+individualButton.classList.add("activeButton");
+document.getElementById("OragnizationForm").style.display="none";
+individualButton.addEventListener("click",()=>{
+    document.getElementById("OragnizationForm").style.display="none";
+    document.getElementById("IndividualForm").style.display="block";
+    individualButton.classList.add("activeButton");
+    organizationButton.classList.remove("activeButton");
+    console.log("Button clicked individual");
+})
+organizationButton.addEventListener("click",()=>{
+    document.getElementById("IndividualForm").style.display="none";
+    document.getElementById("OragnizationForm").style.display="block";
+    organizationButton.classList.add("activeButton");
+    individualButton.classList.remove("activeButton");
+    console.log("Button clicked organization");
 })
 
-$("#Login").click(()=>{
-    $('#SignUpForm').css("display","none")
-    $('#LoginForm').css("display","block")
-    $("#SignUp").removeClass("activeButton")
-    $("#Login").addClass("activeButton");
-})
+
 
 $('#myModal').on('shown.bs.modal', function () {
   $('#myInput').trigger('focus')
